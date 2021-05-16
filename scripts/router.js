@@ -43,7 +43,7 @@ router.setState = function(state) {
   }
   if(state.name == 'entryPage'){
     bodyContent.className = 'single-entry';
-    headerContent.textContent = "Entry" + state.id;
+    headerContent.textContent = "Entry " + state.id;
     bodyContent.removeChild(bodyContent.children[2]);
     let entry = document.createElement("entry-page");
     entry.entry = document.getElementById(state.id).entry;
